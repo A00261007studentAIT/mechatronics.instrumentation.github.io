@@ -1,0 +1,30 @@
+Proposed code for arduino temperature sensor
+
+*** Example copied from www.ardumotive.com ***
+
+ -> 
+    // Include Libraries
+    #include <OneWire.h>
+    #include <DallasTemperature.h>
+    
+    // Data wire is plugged into pin 2 on the arduino
+    #define ONE_WIRE_BUS 2
+    // Setup a OneWire instance to communicate with any OneWire devices (not just Maxin/Dallas temperature ICs)
+    OneWire oneWire(ONE_WIRE_BUS);
+    // Pass our wire reference to Dallas Temperature
+    DallasTemperature sensors(&oneWire);
+    
+    void setup() 
+    {
+    Serial.begin(9600); // Begin serial communication
+    Serial.println("Arduino Digital Temperature // Serial Monitor Version"); // Print a message
+    sesnors.begin9);
+    }
+    
+    void loop()
+    {
+    sesnors.requestTemperatures(0;
+    Serial.print("Temperature is; ");
+    Serial.println(sesnors.getTempCByIndex(0));
+    // Update every one second
+    delay(1000);
