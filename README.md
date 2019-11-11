@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to the Mechantonics Instrumentation GitHub Page
 
 You can use the [editor on GitHub](https://github.com/A00261007studentAIT/mechatronics.instrumentation.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
